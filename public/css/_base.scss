@@ -1,0 +1,181 @@
+// Variáveis
+$hue: 200;
+$color-primary: hsl($hue, 45%, 54%);
+$color-secondary: hsl($hue, 82%, 26%);
+$color-title-light: hsl($hue, 0%, 100%);
+$color-title-dark: hsl($hue, 70%, 13%);
+$text-color: hsl($hue, 0%, 35%);
+$bg-section-light: hsl($hue, 100%, 97%);
+$bg-footer: hsl($hue, 71%, 31%);
+$bg-header: hsl($hue, 0%, 100%);
+$gap-section: 10rem;
+$white: hsl($hue, 0%, 100%);
+
+// Mixin
+@mixin media($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin font($size) {
+    @if $size == 14 {
+        font-size: 1.4rem;
+    } @else if $size == 16 {
+        font-size: 1.6rem;
+    } @else if $size == 18 {
+        font-size: 1.8rem;
+    } @else if $size == 20 {
+        font-size: 2rem;
+    } @else if $size == 24 {
+        font-size: 2.4rem;
+    } @else if $size == 32 {
+        font-size: 3.2rem;
+    } @else if $size == 48 {
+        font-size: 4.8rem;
+    } @else {
+        font-size: 6.4rem;
+    }
+}
+
+// Classes
+main {
+    margin-top: 4.5%;
+    @include media(768px) {
+        margin-top: 7%;
+    }
+    @include media(425px) {
+        margin-top: 8%;
+    }
+}
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+
+    @include media(769px) {
+        max-width: 90%;
+    }
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.media {
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 2.8rem;
+        @include font(32);
+    }
+
+    a {
+        display: inline-block;
+        transition: transform .3s;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    &.media-footer {
+        a {
+            color: $color-title-light;
+        }
+    }
+
+    &.media-about {
+        a {
+            color: $color-secondary;
+        }
+    }
+}
+
+.btn {
+    background: $color-secondary;
+    color: $color-title-light;
+    @include font(18);
+    padding: 2rem 3.2rem;
+    border-radius: .4rem;
+    display: inline-block;
+    transition: background .2s ease;
+
+    @include media(768px) {
+        padding: 1.4rem 2rem;
+    }
+    @include media(425px) {
+        @include font(16);
+    }
+
+    &:hover {
+        background: lighten($color-secondary, 4);
+    }
+}
+
+
+.logo {
+    @include font(32);
+    @include media(425px) {
+        @include font(24);
+    }
+
+    &.logo-header {
+        color: $color-title-dark;
+    }
+
+    &.logo-footer {
+        color: $color-title-light;
+    }
+} 
+
+h2 {
+    @include font(32);
+    color: $color-title-dark;
+}
+
+.scroll-to-top {
+    @include font(24);
+    background: $color-primary;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 50%;
+    a {
+        color: $white;
+    }
+
+    position: fixed;
+    bottom: 3.2rem;
+    right: 3.2rem;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .3s;
+
+    &.ativo {
+        opacity: 1;
+        visibility: visible;
+        animation: animarScrollTop .3s;
+    }
+}
+
+@keyframes animarScrollTop {
+    from {
+        transform: translateY(-15px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.icon {
+    @include font(48);
+    cursor: pointer;
+    display: none;
+    @include media(768px) {
+        display: block;
+        @include font(32);
+    }
+}

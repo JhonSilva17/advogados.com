@@ -1,0 +1,60 @@
+#testimonials {
+    padding: $gap-section 0;
+    background: $bg-section-light;
+    @include media(768px) {
+        padding: ($gap-section - 3.2rem) 0;
+    }
+
+    .cards-testimonials {
+        margin-bottom: 3.2rem;
+        .card {
+            background: $white;
+            border-radius: .6rem;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 2rem 3.2rem;
+            border-bottom: 3px solid $color-primary;
+            .user-about {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+                img {
+                    clip-path: circle();
+                    width: 6.4rem;
+                }
+
+                .content-user {
+                    h3 {
+                        @include font(18);
+                    }
+                    small {
+                        @include font(14);
+                        color: $text-color;
+                    }
+                }
+            }
+
+            & + .card {
+                margin-left: 2rem;
+            }
+
+            .content-card {
+                margin: 2rem 0;
+                p {
+                    @include font(18);
+                    color: $text-color;
+                }
+            }
+
+        }
+        
+    }
+
+    .c-carousel__slides {
+        padding: 4rem 1rem;
+    }
+
+    .glider-dot.active {
+        background-color: $color-primary;
+    }
+}

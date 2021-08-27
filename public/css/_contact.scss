@@ -1,0 +1,53 @@
+#contact {
+    background: $color-primary;
+    padding: 6.4rem 0;
+
+    @include media(425px) {
+        padding: 4.8rem 0;
+    }
+
+    .container {
+        @extend .flex-between;
+
+        h2 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            @include font(18);
+            max-width: 60%;
+            margin: 2rem 0;
+
+            @include media(425px) {
+                max-width: 100%;
+            }
+        }
+
+        .contact-media {
+            @include media(768px) {
+                margin-top: 3.2rem;
+            }
+            ul {
+                text-align: right;
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    @include font(24);
+                    margin-bottom: 2rem;
+                    @include media(768px) {
+                        @include font(18);
+                    }
+                }
+                li, a {
+                    color: $white;
+                }
+
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+BRIEFING ADVOCACIA ONLINE
+
+1. Dados sobre o escritório: 
+ 
+O escritório advogados.com, tem um amplo histórico de casos
+ganhos na região de Barreiras e arredores, temos um ótimo portfólio
+de clientes satisfeitos com o trabalho da nossa equipe que é especializada
+em garantir o seu sucesso jurídico.
+
+2. Quais os serviços apresentados pela empresa?
+
+  - Direito Criminal
+  - Direito Digital
+  - Direitos humanos
+
+3. Público alvo:
+ - Todas as idades
+ - Qualquer escolaridade
+ - Moradores do oeste da bahia
+ - Todas as classes sociais.
+
+4. Objetivo do produto
+
+  O objetivo desse site será para divulgar os trabalhos que
+  esse advogado ou escritório realiza que, posteriormente,
+  irá servir como pontos de referências para os clientes.
+
+  Resumindo: Atrair clientes e divulgar os trabalhos
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+Arquitetura da informação
+
+- Na terceira fase, verificamos como os conteúdos se relacionam
+entre si e como será a navegação.
+
+- Temos que agrupar os conteúdos por assunto e determinar quais 
+serão as páginas do nosso site. Como elas estarão interligadas, é 
+essencial que haja uma hierarquia clara entre elas para não confundir
+ o usuário. A página inicial (home) dá acesso às categorias/tópicos, que 
+por sua vez dão acesso às sub-categorias/sub-tópicos, caso existam.
+
+1 - Teremos o header do site, onde será incluída a logo da empresa e
+o menu, onde terá links que levarão à outras seções do site.
+
+  Links do menu:
+  - Início
+  - Sobre
+  - Serviços
+  - Depoimentos
+  - Contato
+ 
+2 - Uma seção de introdução onde iremos colocar um título introduzindo o
+usuário sobre o que é o site, logo após o título, um pequeno texto para dar
+uma explicadinha básica sobre o site, após o texto, um botão call-to-action
+induzindo o cliente a entrar em contato.
+
+3 - Logo após a seção de introdução, iremos mostrar ao clientes informações
+sobre a empresa ou pessoa dona do site, colocaremos uma imagem da pessoa
+ou das pessoas e uma pequena história da pessoa.
+
+4 - Depois da seção sobre, uma seção onde explicaremos sobre todos os serviços
+ofertados pela pessoa dona do site.
+
+5 - Depois da seção serviços, iremos aprensetar os depoimentos do cliente sobre a
+marca ou pessoa,
+
+6 - Por úlitmo, uma seção que mostrará as informações de contato.
+
+7 - Um footer
+
+
+
+
+
+
+
